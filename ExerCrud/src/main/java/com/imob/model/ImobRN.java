@@ -5,11 +5,7 @@ import java.util.List;
 public class ImobRN {
 
 	public void salvar(Imob m) {
-		if (m.getId() == null) {
-			new ImobDAO().inserir(m);
-		} else {
-			new ImobDAO().update(m);
-		}
+		new ImobDAO().inserir(m);	
 	}
 
 	public List<Imob> listarTodos() {
